@@ -1,0 +1,19 @@
+//Multiply an integer by 321 - note: don't use any arithmetic operations (+,-,/,*)
+
+int mult321(int val)
+{
+   if ( val = 0)
+     return 0;
+   return (mult321(val - 1) + 321;
+}
+
+int add(int a, int b)
+{
+    while (y != 0)
+    {
+        int carry = x & y;  
+        x = x ^ y; 
+        y = carry << 1;
+    }
+    return x;
+}

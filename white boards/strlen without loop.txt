@@ -1,0 +1,8 @@
+//Recursive function
+
+int strlen (char* sz)
+{
+    if (sz[0] == '\0')
+	return 0;
+    return (strlen(sz + 1) +1);
+}

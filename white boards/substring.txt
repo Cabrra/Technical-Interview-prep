@@ -1,0 +1,37 @@
+//Find substring from the given string
+
+char* strsome(char* parent, char* look)
+{
+
+  int i= 0;
+  int j= 0;
+  bool found = false;
+  int index = 0; 
+  while (parent[i] != '\0';
+  {
+    if (parent[i] == look[index])
+    {
+	while(look[j] != '\0';
+	{
+	  if (parent[i] != look[index])
+	  {
+	   break; 
+          }
+	  else if (j == sizeLook -1)
+	  {
+	     found = true;
+	     index = j - sizeLook;		
+	  }
+          j++;
+	}
+    }
+    if (found)
+	break;
+  }
+
+
+  if (found)
+     return (parent[index]+sizeParent- index +1); 
+  else
+     return nullptr;
+}
